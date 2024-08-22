@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:master_go_replication/firebase_options.dart';
+import 'package:master_go_replication/hive/hive_notes_screen.dart';
 import 'package:master_go_replication/onboard/onboard_screens.dart';
 
 void main() async {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Ubuntu"),
-      home: const OnboardScreens(),
+      home: const HiveNotesScreen(),
     );
   }
 }
